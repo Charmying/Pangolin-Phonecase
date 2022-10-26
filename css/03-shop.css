@@ -10,7 +10,9 @@
     letter-spacing: 2.75px;
     color: #26273b;
     /* text-shadow: 1px 1px #f2f2f2; */
-    margin-left: 10%;
+    /* margin-left: 10%; */
+    text-align: center;
+    margin-top: 200px;
 }
 
 .concept_block {
@@ -259,9 +261,10 @@
         letter-spacing: 2.75px;
         color: #26273b;
         /* text-shadow: 1px 1px #f2f2f2; */
-        text-align: center;
+        margin-left: 10%;
         margin-bottom: 120px;
-        margin-left: 0;
+        margin-top: 200px;
+        text-align: start;
     }
 
     .concept_block h3 {
