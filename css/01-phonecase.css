@@ -1,5 +1,9 @@
 /* ====================   主內容   ==================== */
 
+.page_pic {
+  margin-top: 150px;
+}
+
 .phonecase_page_topic h2 {
   font-size: 40px;
   font-weight: 900;
