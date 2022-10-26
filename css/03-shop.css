@@ -1,0 +1,287 @@
+/* ====================   主內容   ==================== */
+
+.shop-block {
+    margin-bottom: 100px;
+}
+
+.shop_page_topic h2 {
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 2.75px;
+    color: #26273b;
+    /* text-shadow: 1px 1px #f2f2f2; */
+    margin-left: 10%;
+}
+
+.concept_block {
+    width: 80%;
+    margin: auto;
+}
+
+.concept_block h3 {
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 2.75px;
+    color: #26273b;
+    /* text-shadow: 1px 1px #f2f2f2; */
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.concept_content {
+    display: block;
+}
+
+.concept-text-left {
+    margin: 40px auto;
+}
+
+.concept-map {
+    width: 100%;
+    font-size: 0;
+    margin-top: 30px;
+    margin: auto;
+}
+
+.concept-map iframe {
+    border-radius: 5px;
+}
+
+.direct_block {
+    width: 100%;
+}
+
+.direct_content {
+    max-width: 100%;
+    display: flex;
+    /* border: solid red 1px; */
+    justify-content: center;   
+    align-items: center;
+}
+
+.direct-text-right p {
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+.direct-text-left p {
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+
+.rrr {
+    flex-direction: row-reverse;
+}
+
+
+/* ===============   小於575.98   =============== */
+
+@media (max-width:575.98px) {
+
+    .direct_block {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .concept-img {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .concept-img img {
+        max-width: 100%;
+    }
+
+    .direct_content {
+        display: block;
+    }
+
+    .direct-img {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .direct-img img {
+        max-width: 100%;
+    }
+
+    .concept-map {
+        margin-top: 30px;
+    }
+    
+    .direct-text-left-2 {
+        margin-top: 30px;
+    }
+    
+}
+
+/* ===============   576 ~ 768.98   =============== */
+
+@media (min-width:576px) and (max-width:768.98px) {
+
+    .concept_content {
+        max-width: 100%;
+        display: flex;
+        /* border: solid red 1px; */
+        justify-content: center;   
+        align-items: center;
+    }
+
+
+    .direct_block {
+        width: 100%;
+    }
+
+
+
+    .concept-img img {
+        max-width: 100%;
+        display: block;
+    }
+
+    .direct_content {
+        max-width: 100%;
+        display: flex;
+        /* border: solid red 1px; */
+        justify-content: center;   
+        align-items: center;
+    }
+
+    .direct-img img{
+        max-width: 100%;
+        display: block;
+    }
+
+}
+
+/* ===============   大於 769   =============== */
+
+@media (min-width:769px) {
+
+    .concept_content {
+        max-width: 100%;
+        display: flex;
+        /* border: solid red 1px; */
+        justify-content: center;   
+        align-items: center;
+        margin: 50px auto;
+    }
+
+    .concept_block {
+        width: 80%;
+        padding-top: 70px;
+    }
+
+    .direct_block {
+        width: 100%;
+        padding-top: 70px;
+    }
+
+    .concept-text-left {
+        width: 50%;
+        /* padding-left: 50px; */
+        /* padding-right: 30px; */
+        letter-spacing:3px;
+    }
+
+    .concept-img {
+        width: 50%;
+        display: block;
+    }
+
+    .concept-img img {
+        max-width: 100%;
+        display: block;
+        border-radius: 10px;
+    }
+
+    .direct_content {
+        max-width: 100%;
+        display: flex;
+        /* border: solid red 1px; */
+        justify-content: space-between;   
+        align-items: center;
+        margin: 50px auto;
+    }
+
+    .direct-text-right {
+        width: 50%;
+        /* padding-left: 30px; */
+        /* padding-right: 50px; */
+        letter-spacing:3px;
+    }
+
+    .direct-text-left {
+        width: 50%;
+        /* padding-left: 30px; */
+        /* padding-right: 50px; */
+        letter-spacing:3px;
+    }
+
+    .direct-img {
+        width: 50%;
+        display: block;
+    }
+    
+     .direct-img img {
+        max-width: 100%;
+        display: block;
+        border-radius: 10px;
+    }
+
+}
+
+/* ===============   小於 769   =============== */
+
+@media (min-width:769px) {
+    
+    .concept_content {
+        max-width: 100%;
+        display: flex;
+        /* border: solid red 1px; */
+        justify-content: center;   
+        align-items: center;
+        margin: 50px auto;
+    }
+
+    .direct_block {
+        width: 100%;
+        margin: auto;
+    }
+
+    .shop_page_topic h2 {
+        font-size: 48px;
+        font-weight: 900;
+        letter-spacing: 2.75px;
+        color: #26273b;
+        /* text-shadow: 1px 1px #f2f2f2; */
+        text-align: center;
+        margin-bottom: 120px;
+        margin-left: 0;
+    }
+
+    .concept_block h3 {
+        font-size: 36px;
+        font-weight: 900;
+        letter-spacing: 2.75px;
+        color: #26273b;
+        /* text-shadow: 1px 1px #f2f2f2; */
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .direct_store {
+        font-size: 36px;
+        font-weight: 900;
+        letter-spacing: 2.75px;
+        color: #26273b;
+        /* text-shadow: 1px 1px #f2f2f2; */
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    
+}

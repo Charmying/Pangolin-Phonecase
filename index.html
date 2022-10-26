@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PANGOLIN</title>
+    <link rel="stylesheet" href="css/normal/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">   <!-- icon -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">   <!-- 購物車 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">   <!-- 滑入動畫 -->
+    <link rel="stylesheet" href="css/total/all.css">
+    <link rel="stylesheet" href="css/total/header.css">
+    <link rel="stylesheet" href="css/total/footer.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- ====================   導覽列   ==================== -->
+    <header id="header">
+        <!-- ====================   主列表   ==================== -->
+        <nav class="main_sel wrapper">
+            <h1><a class="main_sel_logo" href="index.html"><img src="img/navigation/big-logo.png" alt=""></a></h1>
+            <ul>
+                <li><a href="01-phonecase.html">系列機殼</a>
+                    <!-- ====================   次列表   ==================== -->
+                    <ol id="nav-ol">
+                        <li><a href="06-choose-phonecase.html">卡通塗鴉</a></li>
+                        <li><a href="06-choose-phonecase.html">藝術文字</a></li>
+                        <li><a href="06-choose-phonecase.html">流行藝術</a></li>
+                        <li><a href="06-choose-phonecase.html">抽象主義</a></li>
+                        <li><a href="06-choose-phonecase.html">數位藝術</a></li>
+                    </ol>
+                </li>
+                <li><a href="02-accessory.html">周邊配件</a>
+                    <!-- ====================   次列表   ==================== -->
+                    <ol id="nav-ol">
+                        <li><a href="07-choose-accessory-1.html">AirPods保護套</a></li>
+                        <li><a href="07-choose-accessory-1.html">AppleWatch保護殼</a></li>
+                        <li><a href="07-choose-accessory-1.html">磁吸式無線充電盤</a></li>
+                        <li><a href="07-choose-accessory-1.html">螢幕保護貼</a></li>
+                        <li><a href="07-choose-accessory-1.html">鏡頭保護貼</a></li>
+                        <li><a href="07-choose-accessory-1.html">充電線</a></li>
+                    </ol>
+                </li>
+                <li><a href="03-shop.html">實體通路</a></li>
+                <li><a href="04-aboutus.html">關於我們</a></li>
+                <li class="fa">
+                    <a href="05-login.html"><i class="fa-solid fa-user"></i></a>
+                </li>
+                <li class="fa glyphiconn my-cart-icon"><i class="fa-solid fa-cart-shopping"></i>
+                    <span class="glyphicon                                       my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span></li>
+                                            <!--  glyphicon-shopping-cart -->
+                </li>
+            </ul>
+        </nav>
+        <!-- ====================   漢堡   ==================== -->
+        <nav class="ham_sel">
+            <div class="ham_nav">
+                <h1><a class="ham_sel_logo" href="index.html"><img src="img/navigation/big-logo.png" alt=""></a></h1>
+                <div class="ham_line">
+                    <span class="ham_btn hb_1"></span>
+                    <span class="ham_btn hb_2"></span>
+                    <span class="ham_btn hb_3"></span>
+                </div>
+            </div>
+            <ul class="ham_menu">
+                <li><a href="01-phonecase.html">系列機殼</a></li>
+                <li class="plus_line">
+                    <a>周邊配件</a>
+                    <span class="horizontal"></span>
+                    <span class="vertical"></span>     
+                </li>
+                <!-- ====================   漢堡次列表   ==================== -->
+                <ol class="ham_subsel">
+                    <li><a href="07-choose-accessory-1.html">AirPods保護套</a></li>
+                    <li><a href="07-choose-accessory-1.html">AppleWatch保護殼</a></li>
+                    <li><a href="07-choose-accessory-1.html">磁吸式無線充電盤</a></li>
+                    <li><a href="07-choose-accessory-1.html">螢幕保護貼</a></li>
+                    <li><a href="07-choose-accessory-1.html">鏡頭保護貼</a></li>
+                    <li><a href="07-choose-accessory-1.html">充電線</a></li>
+                </ol>
+                <li><a href="03-shop.html">實體通路</a></li>
+                <li><a href="04-aboutus.html">關於我們</a></li>
+                <li><a href="05-login.html">會員登錄</a></li>
+                <li class="my-cart-icon">購物車<span class="glyphicon                                       my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span></li>
+                                                                        <!--  glyphicon-shopping-cart -->
+            </ul>
+        </nav>
+        <div id="ham_mask" class="noshow"></div>
+    </header>
+
+    <!-- ====================   第一頻輪播   ==================== -->
+    <section class="autocarousel">
+        <div id="myCarousel" class="carousel slide">
+            <ol>
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="fill" style="background-image:url('./img/index/autocarousel-1.png');"></div>
+                    <div class="carousel-caption">
+                         <h2 class="animated fadeInLeft">BLVCK</h2>
+                         <p class="animated fadeInUp">More than a color, it’s a lifestyle.</p>
+                         <p class="animated fadeInUp"><a href="#" class="btn btn-transparent btn-rounded btn-large">Learn More</a></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="fill" style="background-image:url('./img/index/autocarousel-2.png');"></div>
+                    <div class="carousel-caption">
+                         <h2 class="animated fadeInDown">ONE PIECE</h2>
+                         <p class="animated fadeInUp">以航海王人氣角色及經典圖案裝點你的電子配件，展現你對航海王的熱愛！</p>
+                         <p class="animated fadeInUp"><a href="#" class="btn btn-transparent btn-rounded btn-large">Learn More</a></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="fill" style="background-image:url('./img/index/autocarousel-3.jpg');"></div>
+                    <div class="carousel-caption">
+                         <h2 class="animated fadeInRight">Louvre x Clo'e Floirat</h2>
+                         <p class="animated fadeInRight">人氣羅浮宮聯名以幽默且俏皮的設計再度登場！</p>
+                         <p class="animated fadeInRight"><a href="#" class="btn btn-transparent btn-rounded btn-large">Learn More</a></p>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="icon-prev"></span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="icon-next"></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ====================   精選機殼   ==================== -->
+    <section>
+        <div class="select wrapper" id="select">
+            <div class="selectcarousel"  data-aos="fade-right">
+                <input type="radio" class="selectslider" name="slider" id="selectitem-1" checked="">
+                <input type="radio" class="selectslider" name="slider" id="selectitem-2">
+                <input type="radio" class="selectslider" name="slider" id="selectitem-3">
+                <div class="selectcards">
+                    <label class="selectcard selecti1" for="selectitem-1" id="selecti-1">
+                        <img src="img/index/select-1.png" alt="">
+                        <p>BLVCK PARIS</p>
+                    </label>
+                    <label class="selectcard selecti2" for="selectitem-2" id="selecti-2">
+                        <img src="img/index/select-2.png" alt="">
+                        <p>SSEBONG</p>
+                    </label>
+                    <label class="selectcard selecti3" for="selectitem-3" id="selecti-3">
+                        <img src="img/index/select-3.png" alt="">
+                        <p>ONE PIECE</p>
+                    </label>
+                </div>
+            </div>
+            <div class="select-text" data-aos="fade-left">
+                <h2>PANGOLIN
+                    <br>    
+                    精選機殼
+                </h2>
+            </div>
+        </div>
+        <div class="button" data-aos="zoom-in">
+            <a class="button-link" href="01-phonecase.html"><p>立即選購</p></a>
+        </div>
+    </section>
+
+    <!-- ====================   精選配件   ==================== -->
+    <section class="accessories wrapper" id="accessories">
+        <h2 class="na-text">精選配件</h2>
+        <div class="items">
+            <div class="i-card" data-aos="fade-up-right">
+                <a href="07-choose-accessory-1.html">
+                    <img src="img/index/product-1.png" alt="">
+                    <p>Skater JOHN</p>
+                </a>
+            </div>
+            <div class="i-card" data-aos="fade-down-right">
+                <a href="07-choose-accessory-1.html">
+                    <img src="img/index/product-2.png" alt="">
+                    <p>Bugcat Capoo</p>
+                </a>
+            </div>  
+            <div class="i-card" data-aos="fade-down-left">
+                <a href="07-choose-accessory-1.html">
+                    <img src="img/index/product-3.png" alt="">
+                    <p>Star Wars</p>
+                </a>
+            </div>
+            <div class="i-card" data-aos="fade-up-left">
+                <a href="07-choose-accessory-1.html">
+                    <img src="img/index/product-4.png" alt="">
+                    <p>Louvre</p>
+                </a>
+            </div>
+        </div> 
+        <div class="viewMore"><a href="07-choose-accessory-1.html">View More</a></div>
+    </section>
+
+    <!-- ====================   最新消息   ==================== -->
+    <section>
+        <div class="news">
+            <h2 class="news_title">最新消息</h2>
+            <div class="news-change">
+                <div class="news_block">
+                    <!-- ====================   圖片   ==================== -->
+                    <div class="news_img_left" data-aos="zoom-in-right">
+                        <a href="#"><img src="img/index/new-1.webp" alt=""></a>
+                    </div>
+                    <!-- ====================   文字   ==================== -->
+                    <div class="news_text_left" data-aos="zoom-in-left">
+                        <a href="#">
+                            <p>
+                            iPhone 14上市至今剛滿一週，iPhone 14 Pro 及Pro Max 的價格雖然屬於高階機種定位，卻已經熱銷強強滾，還聽說Apple 緊急追加的消息，今年輪到你換機了嗎？手機到貨前，可別錯過RHINOSHIELD 犀牛盾因應 iPhone 14 全新規格，量身打造的一系列手機殼與防摔配件。 iPhone 13 vs iPhone 14 新機開箱總整理 新機上市該追流行還是撿便宜？ iPhone 13 與 iPhone 14 規格到底差在哪？現在犀犀就和大家分享 2022 年新款 iPhone 14 系列包含iPhone 14、iPhone 14 Plus、 iPhone 14 Pro的功能、顏色和價格差異。
+                        </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="news-change">
+                <div class="news_block">
+                    <!-- ====================   圖片   ==================== -->
+                    <div class="news_img_right" data-aos="zoom-in-left">
+                        <a href="#"><img src="img/index/new-2.webp" alt=""></a>
+                    </div>
+                    <!-- ====================   文字   ==================== -->
+                    <div class="news_text_right" data-aos="zoom-in-right">
+                        <a href="#">
+                            <p>
+                            【2022 蘋果發表會懶人包 X 配件選物】 IPHONE 14 手機殼、AIRPODS PRO 2 保護套、APPLE WATCH 8、SE 2、ULTRA 保護殼 全系列新品推薦！ 2022/09/08 全球矚目的 2022 Apple Event 蘋果發表會，在台灣時間9月8日凌晨正式登場！ 早已在發展衛星通訊領域的蘋果，這次以宇宙星空感的邀請函視覺，以及“ Far out ” 主題概念營造2022 Apple Event 蘋果發表會，帶出了 iPhone 14 系列、AirPods Pro 2
+                        </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="news-change">
+                <div class="news_block">
+                    <!-- ====================   圖片   ==================== -->
+                    <div class="news_img_left" data-aos="zoom-in-right">
+                        <a href="#"><img src="img/index/new-3.webp" alt=""></a>
+                    </div>
+                    <!-- ====================   文字   ==================== -->
+                    <div class="news_text_left" data-aos="zoom-in-left">
+                        <a href="#">
+                            <p>
+                            一次為你解答「MAGSAFE 兼容系列-保護殼、手機架」10大常見問題！ 2022/08/31 這次我們打造Apple MagSafe 兼容超強磁吸力，為犀牛盾MagSafe 兼容系列配件一次推出MagSafe 保護殼、MagSafe 手機架等Apple MagSafe 兼容配件，上市後獲得許多犀粉的熱烈回應，關於MagSafe 兼容系列配件的問題當然也如雪片般飛來~ 為了讓犀粉們更了解犀牛盾MagSafe 兼容系列是否支援你的機型與是否符合你的使用習慣等疑問，犀犀現在就來為你們一一解答，希望能幫助你們在選購 MagSafe 配件上更有方向！
+                        </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+    <!-- ====================   Footer   ==================== --> 
+    <footer>
+        <nav class="qqq">
+            <div class="products">
+                <div class="ftitle">
+                    <h5 class="fmenu_name">Products</h5>
+                    <img class="arrow" src="img/footer/downarrow.png" alt="">
+                </div>
+                <span class="underline"></span>
+                <ul class="fsub">
+                    <li><a href="01-phonecase.html">手機殼</a></li>
+                    <li><a href="02-accessory.html">周邊配件</a></li>
+                    <li><a href="06-choose-phonecase.html">精選產品</a></li>
+                </ul>
+            </div>
+            <div class="company">
+                <div class="ftitle">
+                    <h5 class="fmenu_name">Company</h5>
+                    <img class="arrow" src="img/footer/downarrow.png" alt="">
+                </div>
+                <span class="underline"></span>
+                <ul class="fsub">
+                    <li><a href="04-aboutus.html">關於我們</a></li>
+                    <li><a href="03-shop.html">實體店面</a></li>
+                    <li><a href="#">人才招募</a></li>
+                </ul>
+            </div>
+            <div class="support">
+                <div class="ftitle">
+                    <h5 class="fmenu_name">Support</h5>
+                    <img class="arrow" src="img/footer/downarrow.png" alt="">
+                </div>
+                <span class="underline"></span>
+                <ul class="fsub">
+                    <li><a href="#">隱私權政策</a></li>
+                    <li><a href="#">使用條款</a></li>
+                    <li><a href="#">退換貨說明</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <div class="icon">
+                    <a href="#"><img src="img//footer/facebook.png" alt=""></a>
+                    <a href="#"><img src="img/footer/instagram.png" alt=""></a>
+                    <a href="#"><img src="img/footer/youtube.png" alt=""></a>
+                </div>
+                <div class="newsletter">
+                    <h5>Newsletter</h5>
+                        <input id="email" type="email"  class="the_text">
+                        <input id="subscribe" type="submit" value="Subscribe" class="the_btn">
+                </div>
+            </div>
+        </nav>
+        <p class="wrapper">本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。 若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。 COPYRIGHT © 2022 PARTYME Co.,Ltd. All rights reserved.</p>
+    </footer>
+
+    <!-- ====================   回到最上面   ==================== -->
+    <section>
+        <div class="backtop" id="backtop">
+          <img src="img/uparrow.png" alt="">
+        </div>
+    </section>
+
+    <!-- ====================   Loading 網頁   ==================== -->
+    <section>
+        <div class="loadingpage">
+            <div class="bar bar1"></div>
+            <div class="bar bar2">
+                <div class="loadcontent">
+                    <img class="loadlogo" src="img/Mask group.png" alt="">
+                    <h4 class="typing">LOADING......</h4>
+                </div>
+            </div>
+            <div class="bar bar3"></div>    
+        </div>
+    </section>
+
+    <!-- ====================   script   ==================== -->
+    <script src="js/all.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/06-choose-phonecase.js"></script>
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script type='text/javascript' src="js/bootstrap.min.js"></script>
+    <script type='text/javascript' src="js/jquery.phonecase.js"></script>
+    <script type='text/javascript' src="js/jquery.accessory.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>

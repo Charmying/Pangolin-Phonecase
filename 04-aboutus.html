@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>關於 PANGOLIN</title>
+    <link rel="stylesheet" href="css/normal/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">   <!-- icon -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">   <!-- 購物車 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">   <!-- 滑入動畫 -->
+    <link rel="stylesheet" href="css/total/all.css">
+    <link rel="stylesheet" href="css/total/header.css">
+    <link rel="stylesheet" href="css/total/footer.css">
+    <link rel="stylesheet" href="css/04-aboutus.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- ====================   導覽列   ==================== -->
+    <header id="header">
+        <!-- ====================   主列表   ==================== -->
+        <nav class="main_sel wrapper">
+            <h1><a class="main_sel_logo" href="index.html"><img src="img/navigation/big-logo.png" alt=""></a></h1>
+            <ul>
+                <li><a href="01-phonecase.html">系列機殼</a>
+                    <!-- ====================   次列表   ==================== -->
+                    <ol>
+                        <li><a href="06-choose-phonecase.html">卡通塗鴉</a></li>
+                        <li><a href="06-choose-phonecase.html">藝術文字</a></li>
+                        <li><a href="06-choose-phonecase.html">流行藝術</a></li>
+                        <li><a href="06-choose-phonecase.html">抽象主義</a></li>
+                        <li><a href="06-choose-phonecase.html">數位藝術</a></li>
+                    </ol>
+                </li>
+                <li><a href="02-accessory.html">周邊配件</a>
+                    <!-- ====================   次列表   ==================== -->
+                    <ol>
+                        <li><a href="07-choose-accessory-1.html">AirPods保護套</a></li>
+                        <li><a href="07-choose-accessory-1.html">AppleWatch保護殼</a></li>
+                        <li><a href="07-choose-accessory-1.html">磁吸式無線充電盤</a></li>
+                        <li><a href="07-choose-accessory-1.html">螢幕保護貼</a></li>
+                        <li><a href="07-choose-accessory-1.html">鏡頭保護貼</a></li>
+                        <li><a href="07-choose-accessory-1.html">充電線</a></li>
+                    </ol>
+                </li>
+                <li><a href="03-shop.html">實體通路</a></li>
+                <li><a href="04-aboutus.html">關於我們</a></li>
+                <li class="fa">
+                    <a href="05-login.html"><i class="fa-solid fa-user"></i></a>
+                </li>
+                <li class="fa glyphiconn my-cart-icon"><i class="fa-solid fa-cart-shopping"></i>
+                    <span class="glyphicon                                       my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span></li>
+                                            <!--  glyphicon-shopping-cart -->
+                </li>
+            </ul>
+        </nav>
+        <!-- ====================   漢堡   ==================== -->
+        <nav class="ham_sel">
+            <div class="ham_nav">
+                <h1><a class="ham_sel_logo" href="index.html"><img src="img/navigation/big-logo.png" alt=""></a></h1>
+                <div class="ham_line">
+                    <span class="ham_btn hb_1"></span>
+                    <span class="ham_btn hb_2"></span>
+                    <span class="ham_btn hb_3"></span>
+                </div>
+            </div>
+            <ul class="ham_menu">
+                <li><a href="01-phonecase.html">系列機殼</a></li>
+                <li class="plus_line">
+                    <a>周邊配件</a>
+                    <span class="horizontal"></span>
+                    <span class="vertical"></span>     
+                </li>
+                <!-- ====================   漢堡次列表   ==================== -->
+                <ol class="ham_subsel">
+                    <li><a href="07-choose-accessory-1.html">AirPods保護套</a></li>
+                    <li><a href="07-choose-accessory-1.html">AppleWatch保護殼</a></li>
+                    <li><a href="07-choose-accessory-1.html">磁吸式無線充電盤</a></li>
+                    <li><a href="07-choose-accessory-1.html">螢幕保護貼</a></li>
+                    <li><a href="07-choose-accessory-1.html">鏡頭保護貼</a></li>
+                    <li><a href="07-choose-accessory-1.html">充電線</a></li>
+                </ol>
+                <li><a href="03-shop.html">實體通路</a></li>
+                <li><a href="04-aboutus.html">關於我們</a></li>
+                <li><a href="05-login.html">會員登錄</a></li>
+                <li class="my-cart-icon">購物車<span class="glyphicon                                       my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span></li>
+                                                                        <!--  glyphicon-shopping-cart -->
+            </ul>
+        </nav>
+        <div id="ham_mask" class="noshow"></div>
+    </header>
+
+    <!-- ====================   主內容   ==================== -->
+    <section class="main-block">
+        <div class="aboutus_topic">
+            <h2>
+                關於我們
+            </h2>
+        </div>
+        <div class="page_pic">
+            <img src="img/04-aboutus/top.jpg" alt="">
+        </div>
+        <div class="content">
+            <div class="content-block">
+                <div class="imgcontainer icbc">
+                    <img class="slidein rtl bcimg active" id="bcimg" src="img/04-aboutus/aboutus-1.jpg" alt="">
+                </div>
+                <div class="content cbc fadein active">
+                    <h3 class="titlebc">PANGOLIN 之於我</h3>
+                    <p>
+                        我們深信透過「自我表達」能完美展現每個人的獨特之處，PANGOLIN 希望為那些勇於追夢及富冒險精神的創意家，打造一個盡情揮灑的手機殼舞台！
+                        我們與合作夥伴 Afterall Studio 回歸品牌初心，推出全新 logo 與包裝設計，希望能重新定義自我時尚，創造出獨特的個性與態度！
+                    </p>
+                </div>
+            </div>
+            <div class="content-block rrr">
+                <div class="imgcontainer iccms">
+                    <img class="slidein ltr cmsimg" id="cmsimg" src="img/04-aboutus/aboutus-2.webp" alt="">
+                </div>
+                <div class="content cms fadein">
+                    <h3 class="titlecms">從芯打造體驗  還原科技之美</h3>
+                    <p>
+                        你好！我們是 PANGOLIN！是一群具有工業設計背景的台灣年輕人組成的，在團隊中有來自於不同專業領域的工程師、產品設計師以及技術研發者，且擁有多國多項專利，透過我們的研發技術成果，用850℃ 火烤的熱情鍛造出順應潮流的邊框設計！
+                        PANGOLIN 非常重視用戶的使用體驗，我們認為設計作品必須融入人性溫度，決非因提升保護性而委曲求全，透過醫療級矽膠特有的療癒觸感，融入極簡設計風格，減法架構下，捨棄多餘的菱角，用渾然天成的流線設計，給您最佳的使用體驗！
+                    </p>
+                </div>
+            </div>
+            <div class="content-block">
+                <div class="img_3 imgcontainer icfd">
+                    <img class="slidein rtl fdimg" id="fdimg" src="img/04-aboutus/aboutus-3.webp" alt="">
+                </div>
+                <div class="content content-3 cfd fadein">
+                    <h3 class="titlefd change-height-h3">守護智慧科技、地球環境以及個人風格</h3>
+                    <p>
+                        成立於2012年，PANGOLIN 從發跡於Kickstarter的新創企業，成為全球知名的軍規防護配件領導品牌，在亞洲、北美、及歐洲的主要城市均擁有銷售據點，為全世界的人們帶來開創性的科技防護產品。
+                        自創立以來，
+                        PANGOLIN 始終秉持的獨創新意的設計理念，持續不斷地研發出最頂尖的創新產品科技，並在兼顧保護環境永續理想的同時，達成時尚美學設計，讓手機配件完美契合使用者的生活各個面向，成為個人創意風格的延伸，重新定義了科技裝置配件產業。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================   Footer   ==================== --> 
+    <footer>
+        <nav class="qqq">
+            <div class="products">
+                <div class="ftitle">
+                    <h5 class="fmenu_name">Products</h5>
+                    <img class="arrow" src="img/footer/downarrow.png" alt="">
+                </div>
+                <span class="underline"></span>
+                <ul class="fsub">
+                    <li><a href="01-phonecase.html">手機殼</a></li>
+                    <li><a href="02-accessory.html">周邊配件</a></li>
+                    <li><a href="06-choose-phonecase.html">精選產品</a></li>
+                </ul>
+            </div>
+            <div class="company">
+                <div class="ftitle">
+                    <h5 class="fmenu_name">Company</h5>
+                    <img class="arrow" src="img/footer/downarrow.png" alt="">
+                </div>
+                <span class="underline"></span>
+                <ul class="fsub">
+                    <li><a href="04-aboutus.html">關於我們</a></li>
+                    <li><a href="03-shop.html">實體店面</a></li>
+                    <li><a href="#">人才招募</a></li>
+                </ul>
+            </div>
+            <div class="support">
+                <div class="ftitle">
+                    <h5 class="fmenu_name">Support</h5>
+                    <img class="arrow" src="img/footer/downarrow.png" alt="">
+                </div>
+                <span class="underline"></span>
+                <ul class="fsub">
+                    <li><a href="#">隱私權政策</a></li>
+                    <li><a href="#">使用條款</a></li>
+                    <li><a href="#">退換貨說明</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <div class="icon">
+                    <a href="#"><img src="img//footer/facebook.png" alt=""></a>
+                    <a href="#"><img src="img/footer/instagram.png" alt=""></a>
+                    <a href="#"><img src="img/footer/youtube.png" alt=""></a>
+                </div>
+                <div class="newsletter">
+                    <h5>Newsletter</h5>
+                        <input id="email" type="email"  class="the_text">
+                        <input id="subscribe" type="submit" value="Subscribe" class="the_btn">
+                </div>
+            </div>
+        </nav>
+        <p class="wrapper">本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。 若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。 COPYRIGHT © 2022 PARTYME Co.,Ltd. All rights reserved.</p>
+    </footer>
+
+    <!-- ====================   回到最上面   ==================== -->
+    <section>
+        <div class="backtop" id="backtop">
+          <img src="img/uparrow.png" alt="">
+        </div>
+    </section>  
+
+    <!-- ====================   script   ==================== -->
+    <script src="vendors/jquery/jquery-3.6.0.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/04-aboutus.js"></script>
+    <script src="js/06-choose-phonecase.js"></script>
+    
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script type='text/javascript' src="js/bootstrap.min.js"></script>
+    <script type='text/javascript' src="js/jquery.phonecase.js"></script>
+    <script type='text/javascript' src="js/jquery.accessory.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+  </body>
+  </html>

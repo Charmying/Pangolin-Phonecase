@@ -1,0 +1,138 @@
+/* ====================   主內容   ==================== */
+
+.accessory_page_topic {
+    width: 100%;
+    margin-top: 200px;
+}
+
+.accessory_page_topic h2 {
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 2.75px;
+    color: #26273b;
+    /* text-shadow: 1px 1px #f2f2f2; */
+    margin-left: 10%;
+    /* text-align: center; */
+    margin-bottom: 50px;
+}
+
+.accessory_block {
+    width: 80%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    text-align: center;
+    margin: 100px auto 100px auto;
+}
+
+.accessory_block_unit {
+    width: 98%;
+    margin: 10px;
+    justify-content: center;
+}
+
+.accessory_block_unit_pic img {
+    width: 75%;
+    height: auto;
+}
+
+.accessory_block_unit_txt_name  {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 2.75px;
+    color: #C4A87E;
+    /* text-shadow: 1px 1px #f2f2f2; */
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.accessory_block_unit_txt {
+    margin-top: 40px;
+}
+
+.accessory_block_unit_txt_name {
+    margin-top: 10px;
+    margin-left: 0px;
+    text-align: center;
+}
+
+.accessory_block_unit_txt_btn {
+    /* width: 200px;
+    height: 200px;
+    background-color: #fff; */
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.bunnton-link p {
+    font-family: 'David Libre', serif, '微軟正黑體';
+    color: #26273b;
+    letter-spacing: 1px;
+
+    text-align: right;
+    display: block;
+    /* padding-bottom: 5px; */
+    transition: 0.5s;
+    padding-top: 100px;
+    font-size: 20px;
+    font-weight: 900;
+    color: #26273b;
+    margin-top: -100px;
+    margin-bottom: 100px;
+}
+
+.bunnton-link p:hover{
+    color: #C4A87E;
+    cursor: pointer;
+}
+
+/* ===============   小於 767.98   =============== */
+
+@media screen and (max-width: 768px) {
+
+    .accessory_page_topic h2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-left: 0;
+    }
+
+    .accessory_block {
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .accessory_block_unit_pic {
+        width: 97%;
+    }
+  
+}
+
+/* ===============   小於 575.98   =============== */
+
+@media screen and (max-width:575.98px) {
+
+    .accessory_block {
+        display: inline-block;
+        width: 85%;
+    }
+
+    .accessory_block_unit {
+        width: 98%;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+

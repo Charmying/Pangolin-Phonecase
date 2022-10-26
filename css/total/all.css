@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    /* font-size: 15px;
+    color: #26273B; */
+    font-family: 'David Libre', serif, '微軟正黑體';
+    line-height: 1.5;
+}
+
+h5 {
+    letter-spacing: 1px;
+    color: #C4A87E;
+    font-weight: 500;
+}
+
+p{
+    font-family: 'Niramit', sans-serif;
+    letter-spacing: 1px;
+    color: #C4A87E;
+    line-height: 2;
+    font-weight: 500;
+}
+
+a{
+    font-family: 'Niramit', sans-serif;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #C4A87E;
+}
+
+.wrapper{
+    width: 1104px;
+    margin: 0 auto;
+    padding: 0 15px;
+    /* overflow: hidden; */
+}
+
+
+
+/* =================   查看更多   ================== */
+
+.viewMore{
+    width: 98%;
+    text-align: right;
+    display: block;
+    /* padding-bottom: 5px; */
+    transition: 0.5s;
+    padding-top: 100px;
+    font-size: 20px;
+}
+
+.viewMore a:hover{
+    color: #26273b;
+    cursor: pointer;
+}
+
+@media (max-width: 767.98px){
+
+    .viewMore{
+        padding-top: 100px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+}
+
+img{
+    vertical-align: bottom;
+}
+
+.show{
+    display: block;
+}
+
+.noshow{
+    display: none;
+}
+
+@media (max-width: 767.98px){
+    .wrapper{
+        width: 100%;
+        overflow: hidden;
+    }
+    .viewMore{
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px){
+    .wrapper{
+        width: 100%;
+        overflow: hidden;
+        /* border: 1px solid red; */
+    }
+}
+
+
+
+/* ====================   回到最上面   ==================== */
+
+div.backtop{
+    cursor: pointer;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+}
+
+div.backtop:hover{
+    animation: popping 2s ease infinite;
+}
+
+@keyframes popping {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+.backtop img{
+    width: 40px;
+}   
+
+@media (max-width: 575.98px){
+    div.backtop{
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .backtop img{
+        width: 30px;
+    }  
+}
+
+.page_pic {
+    margin-top: 50px;
+}
+
+.page_pic img {
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 10px;
+}
+
+
+
+/* ================= 滑入動畫 ================== */
+
+.slidein{
+    opacity: 0;
+    transition: 2.5s;
+}
+
+.ltr{
+    transform: translateX(-30%) scale(0.8);
+}
+
+.rtl{
+    transform: translateX(30%) scale(0.8);
+}
+
+.slidein.active{
+    opacity: 1;
+    transform: translateX(0%) scale(1);
+}
+
+.fadein{
+    opacity: 0;
+    transform: scale(0.8);
+    transition: 2.5s;
+}
+
+.fadein.active{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.shrink{
+    opacity: 0;
+    transform: scale(1.3);
+    transition: 2.5s;
+}
+
+.shrink.active{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.upwards{
+    opacity: 0;
+    transform: translateY(30%);
+}
+
+.upwards.active{
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+@keyframes fadein {
+    0%{
+        opacity: 0;
+    }   
+    100%{
+        opacity: 1;
+    } 
+}
+
+@keyframes fadeout {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

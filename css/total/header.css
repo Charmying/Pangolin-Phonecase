@@ -1,0 +1,542 @@
+/* ====================   導覽列   ==================== */
+header {
+    /* background-color: #26273b; */
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 29;
+}
+
+.currentpage{
+    color: #F0EBD8;
+}
+
+/* all.js 有寫 */
+
+.currentpage {
+    color: #F0EBD8;
+}
+
+/* ====================   主列表   ==================== */
+.main_sel {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 25%;
+    justify-content: space-around;
+    background-image: url(../../img/123.jpg);
+}
+
+.main_sel_logo img {
+    width: 80%;
+}
+
+.main_sel ul {
+    display: flex;
+    /* flex-grow: 1; */
+    text-align: center;
+    gap: 24px;
+}
+
+.main_sel ul > li {
+    flex-basis: 0;
+    position: relative;
+    flex-grow: 1;
+    line-height: 65px;
+    display: flex;
+}
+
+.main_sel a {
+    transition: 0.5s;
+    font-weight: regular;
+    letter-spacing: 0.98px;
+    margin: 0 auto;
+}
+
+.main_sel li :hover {
+    color: #26273b;
+    font-weight: 900;
+}
+
+/* ====================   次列表   ==================== */
+
+.main_sel ol {
+    width: 170px;
+    background-color: #fff;
+    background-image: url(../../img/123.jpg);
+    line-height: 5;
+    text-align: center;
+    opacity: .9;
+    border-radius: 0 0 5px 5px;
+    position: absolute;
+    left: -52px;
+    top: 65px;
+    z-index: 30;
+    display: none;
+    /* margin-top: 8px; */
+}
+
+.main_sel ol > li {
+    display: flex;
+}
+
+.main_sel ul > li:hover ol {
+    display: block;
+}
+
+.main_sel ol > li:hover {
+    /* background-color: #bb945b; */
+    opacity: 1;
+}
+
+/* ====================   漢堡   ==================== */
+
+.ham_sel {
+    position: relative;
+}
+
+.ham_nav {
+    display: none;
+    height: 50px;
+}
+
+.ham_nav > h1 {
+    margin-left: 45%;
+    transform: translateX(-50%);
+    display: inline-block;
+    line-height: 45px;
+}
+
+.ham_sel_logo img {
+    width: 150px;
+    /* padding: 3px; */
+}
+
+.ham_line {
+    float: right;
+    cursor: pointer;
+    margin-right: 22px;
+    margin-top: 22px;
+}
+
+.hb_1, .hb_2, .hb_3 {
+    content: "";
+    background-color: #C4A87E;
+    display: block;
+    width: 30px;
+    height: 1px;
+    border-radius: 3px;
+    margin: 7px 0;
+    transition: .5s;
+    /* transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); */
+}
+
+.hb_1.active {
+    transform: translateY(11px) rotate(135deg);
+}
+
+.hb_2.active {
+    transform: scale(0);
+}
+
+.hb_3.active {
+    transform: translateY(-5px) rotate(-135deg);
+}
+
+ul.ham_menu {
+    width: 75%;
+    height: 100vh;
+    position: absolute;
+    right: 0px;
+    transform: translateX(-100%); 
+    background-image: url(../../img/123.jpg);
+    background-size: cover;
+    border-radius: 0 0 5px 5px;
+    padding: 10px;
+    transition: 1s;
+    transform: translateX(120%);
+    z-index: 500;
+}
+
+ul.ham_menu.active {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.ham_menu li {
+    padding: 8px;
+    margin-left: 10px;
+}
+
+.ham_menu ol > li {
+    padding: 8px 10px;
+}
+
+.ham_menu a {
+    font-size: 24px;
+    transition: .5s;
+    width: 100%;
+    display: block;
+}
+
+.ham_menu a:hover {
+    color: #F0EBD8;
+}
+
+.ham_menu .plus_line:hover .horizontal, .ham_menu .plus_line:hover .vertical{
+    background-color: #F0EBD8;
+}
+
+.ham_menu .plus_line {
+    cursor: pointer;
+}
+
+.ham_menu .horizontal, .ham_menu .vertical {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    margin-top: 10px;
+    background-color: #C4A87E;
+    transition: .5s;
+    cursor: pointer;
+    float: right;
+    transform: translate(-10px, -30px);
+}
+
+.ham_menu .vertical {
+    transform: rotate(90deg) translate(-30px, -10px);
+}
+
+.ham_menu .vertical.active {
+    transform: rotate(0deg) translate(-30px, -10px) scale(0);
+}
+
+
+ol.ham_subsel {
+    animation: subsel .5s linear 1;
+    display: none;
+}
+
+
+.ham_subsel li:first-child::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #F0EBD8;
+    margin-bottom: 20px;
+}
+
+.ham_subsel li:last-child::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #F0EBD8;
+    margin: 20px 0;
+}
+
+#ham_mask {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    /* background: #26273b42; */
+    z-index: 300;
+    width: 100%;
+    height: calc(100vh - 50px);
+   opacity: 0;
+}
+
+.glyphicon {
+    margin-top: 80%;
+}
+.fa-cart-shopping {
+    margin-top: 63.5%;
+    color: #C4A87E;
+}
+
+@media (max-width: 767.98px){
+
+    .glyphicon {
+        margin-top: 0;
+    }
+
+}
+
+.ham_menu li {
+    font-family: 'Niramit', sans-serif;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #C4A87E;
+
+    font-size: 24px;
+    transition: .5s;
+    width: 100%;
+    display: block;
+}
+
+.ham_menu li:hover {
+    color: #F0EBD8;
+}
+
+.main_sel ul > li.fa {
+    flex-grow: 0;
+}
+
+.ham_menu li.fa {
+    padding: 0 0 0 8px;
+    margin-left: 10px;
+    position: relative;
+}
+
+/* ===================   Header RWD   ==================== */
+
+@media (max-width: 767.98px){
+
+    .main_sel{
+        display: none;
+        background-image: url(../../img/123.jpg);
+    }
+
+    .ham_nav{
+        display: block;
+        background-image: url(../../img/123.jpg);
+        height: 70px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================   回到最上層   ====================- */
+.top {
+    margin: 65px auto 100px;
+    position: relative;
+    width: 1104px;
+}
+
+.topspace {
+    height: 120px;
+    position: relative;
+}
+
+.top h2 {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 5;
+    animation: toph2 1.5s ease;
+}
+
+@keyframes toph2 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.top .view {
+    position: relative;
+    height: 330px;
+}
+
+.viewmask {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #1b1c2b;
+    animation: opening 1.5s ease;
+    z-index: 3;
+}
+
+.viewmask2 {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #F0EBD8;
+    animation: opening2 1.5s ease .3s;
+    z-index: 2;
+}
+
+@keyframes opening {
+    0%{
+        /* background-color: #1b1c2b; */
+        width: 100%;
+    }
+    100%{
+        /* background-color: #F0EBD8; */
+        width: 0%;
+    }
+}
+
+@keyframes opening2 {
+    0%{
+        opacity: 0;
+        width: 100%;
+    }
+    100%{
+        opacity: 1;
+        width: 0%;
+    }
+}
+
+.top img {
+    margin-top: 0px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 1104px;
+}
+
+@media (max-width: 767.98px) {
+    .top{
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        /* border: 1px solid red; */
+    }
+
+    .topspace {
+        height: 80px;
+    }
+
+    .top h2 {
+        font-size: 90px;
+        position: absolute;
+        top: 10px;
+    }
+
+    .top .view {
+        width: 100%;
+        height: auto;
+        padding-top: 45%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .top img {
+        width: auto;
+        min-height: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-60%, -50%);
+    }
+}
+
+@media (max-width: 575.98px) {
+    .top{
+        margin: 65px auto 40px;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .topspace {
+        height: 60px;
+    }
+
+    .top h2 {
+        font-size: 52px;
+        position: absolute;
+        top: 10px;
+        font-weight: 700;
+        letter-spacing: 2.5px;
+        text-shadow: 3px 3px #f2f2f2;
+    }
+
+    .top .view {
+        width: 100%;
+        height: auto;
+        padding-top: 45%;
+        overflow: hidden;
+    }
+
+    .top img {
+        width: auto;
+        max-height: 100%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-60%, -50%);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .top{
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#nav-ol {
+    padding-left: 0;
+}

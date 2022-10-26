@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>各系列手機殼</title>
+    <link rel="stylesheet" href="css/normal/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">   <!-- icon -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">   <!-- 購物車 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">   <!-- 滑入動畫 -->
+    <link rel="stylesheet" href="css/total/all.css">
+    <link rel="stylesheet" href="css/total/header.css">
+    <link rel="stylesheet" href="css/total/footer.css">
+    <link rel="stylesheet" href="css/01-phonecase.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>\
+</head>
+<body>
+
+    <!-- ====================   導覽列   ==================== -->
+    <header id="header">
+        <!-- ====================   主列表   ==================== -->
+        <nav class="main_sel wrapper">
+            <h1><a class="main_sel_logo" href="index.html"><img src="img/navigation/big-logo.png" alt=""></a></h1>
+            <ul>
+                <li><a href="01-phonecase.html">系列機殼</a>
+                    <!-- ====================   次列表   ==================== -->
+                    <ol>
+                        <li><a href="06-choose-phonecase.html">卡通塗鴉</a></li>
+                        <li><a href="06-choose-phonecase.html">藝術文字</a></li>
+                        <li><a href="06-choose-phonecase.html">流行藝術</a></li>
+                        <li><a href="06-choose-phonecase.html">抽象主義</a></li>
+                        <li><a href="06-choose-phonecase.html">數位藝術</a></li>
+                    </ol>
+                </li>
+                <li><a href="02-accessory.html">周邊配件</a>
+                    <!-- ====================   次列表   ==================== -->
+                    <ol>
+                        <li><a href="07-choose-accessory-1.html">AirPods保護套</a></li>
+                        <li><a href="07-choose-accessory-1.html">AppleWatch保護殼</a></li>
+                        <li><a href="07-choose-accessory-1.html">磁吸式無線充電盤</a></li>
+                        <li><a href="07-choose-accessory-1.html">螢幕保護貼</a></li>
+                        <li><a href="07-choose-accessory-1.html">鏡頭保護貼</a></li>
+                        <li><a href="07-choose-accessory-1.html">充電線</a></li>
+                    </ol>
+                </li>
+                <li><a href="03-shop.html">實體通路</a></li>
+                <li><a href="04-aboutus.html">關於我們</a></li>
+                <li class="fa">
+                    <a href="05-login.html"><i class="fa-solid fa-user"></i></a>
+                </li>
+                <li class="fa glyphiconn my-cart-icon"><i class="fa-solid fa-cart-shopping"></i>
+                    <span class="glyphicon                                       my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span></li>
+                                            <!--  glyphicon-shopping-cart -->
+                </li>
+            </ul>
+        </nav>
+        <!-- ====================   漢堡   ==================== -->
+        <nav class="ham_sel">
+            <div class="ham_nav">
+                <h1><a class="ham_sel_logo" href="index.html"><img src="img/navigation/big-logo.png" alt=""></a></h1>
+                <div class="ham_line">
+                    <span class="ham_btn hb_1"></span>
+                    <span class="ham_btn hb_2"></span>
+                    <span class="ham_btn hb_3"></span>
+                </div>
+            </div>
+            <ul class="ham_menu">
+                <li><a href="01-phonecase.html">系列機殼</a></li>
+                <li class="plus_line">
+                    <a>周邊配件</a>
+                    <span class="horizontal"></span>
+                    <span class="vertical"></span>     
+                </li>
+                <!-- ====================   漢堡次列表   ==================== -->
+                <ol class="ham_subsel">
+                    <li><a href="07-choose-accessory-1.html">AirPods保護套</a></li>
+                    <li><a href="07-choose-accessory-1.html">AppleWatch保護殼</a></li>
+                    <li><a href="07-choose-accessory-1.html">磁吸式無線充電盤</a></li>
+                    <li><a href="07-choose-accessory-1.html">螢幕保護貼</a></li>
+                    <li><a href="07-choose-accessory-1.html">鏡頭保護貼</a></li>
+                    <li><a href="07-choose-accessory-1.html">充電線</a></li>
+                </ol>
+                <li><a href="03-shop.html">實體通路</a></li>
+                <li><a href="04-aboutus.html">關於我們</a></li>
+                <li><a href="05-login.html">會員登錄</a></li>
+                <li class="my-cart-icon">購物車<span class="glyphicon                                       my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span></li>
+                                                                        <!--  glyphicon-shopping-cart -->
+            </ul>
+        </nav>
+        <div id="ham_mask" class="noshow"></div>
+    </header>
+
+    <!-- ====================   主內容   ==================== -->
+    <section>
+        <div class="page_pic">
+            <img src="img/01-phonecase/top.png" alt="">
+        </div>
+        <div class="phonecase_page_topic">
+            <h2 data-aos="zoom-in-down">熱銷款式</h2>
+            <p data-aos="zoom-in-down">我們為您精選出由不同插畫家設計的熱銷款式</p>
+        </div>
+        <!-- ====================   系列機殼展示   ==================== -->
+        <div class="show_series">
+            <!-- <div class="show_series" id="3d"> -->
+            <h3 data-aos="zoom-in-up">卡通塗鴉</h3>
+            <h4 data-aos="zoom-in-up">我們的卡通系列讓您每天都充滿快樂能量！</h4>
+            <div class="gallery_container" >
+                <div class="gallery_picture">
+                    <div class="thumb" data-aos="zoom-in-right">
+                        <a target="_self" href="06-choose-phonecase.html" class="pic_1">
+                            <img src="img/01-phonecase/cartoon-1.png" alt="">
+                            <p>Jon Burgerman</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery_picture">
+                    <div class="thumb" data-aos="zoom-out">
+                        <a target="_self" href="06-choose-phonecase.html" class="pic_2">
+                            <img src="img/01-phonecase/cartoon-2.png" alt="">
+                            <p>Joguman Studio</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery_picture">
+                    <div class="thumb" data-aos="zoom-in-left">
+                        <a target="_self" href="06-choose-phonecase.html" class="pic_3">
+                            <img src="img/01-phonecase/cartoon-3.png" alt="">
+                            <p>Keigo</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="viewMore"><a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" href="06-choose-phonecase.html">View More</a></div>
+        </div>
+        <!-- ====================   系列機殼展示   ==================== -->
+        <div class="show_series">
+            <h3 data-aos="zoom-in-up">藝術文字</h3>
+            <h4 data-aos="zoom-in-up">您是語言文字愛好者嗎？這個系列十分適合您。</h4>
+            <div class="gallery_container" >
+                <div class="gallery_picture">
+                    <div class="thumb" data-aos="zoom-in-right">
+                        <a target="_self" href="06-choose-phonecase.html" class="pic_1">
+                            <img src="img/01-phonecase/word-1.png" alt="">
+                            <p>Top Girl Studio</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery_picture">
+                    <div class="thumb" data-aos="zoom-out">
+                        <a target="_self" href="06-choose-phonecase.html" class="pic_2">
+                            <img src="img/01-phonecase/word-2.png" alt="">
+                            <p>Boring Friends</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery_picture">
+                    <div class="thumb" data-aos="zoom-in-left">
+                        <a target="_self" href="06-choose-phonecase.html" class="pic_3">
+                            <img src="img/01-phonecase/word-3.png" alt="">
+                            <p>PrettyCoolStrangers</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="viewMore"><a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" href="06-choose-phonecase.html">View More</a></div>
+        </div>    
+        <!-- ====================   系列機殼展示   ==================== -->
+        <div class="show_series">
+            <!-- <div class="show_series" id="3d"> -->
+            <h3 data-aos="zoom-in-up">抽象主義</h3>
+            <h4 data-aos="zoom-in-up">希望找回內心的平靜嗎？抽象系列特別為您而設。</h4>
+            <div class="gallery_container" >
+                <div class="gallery_picture">
+                    <div class="thumb" data-aos="zoom-in-right">
+                        <a target="_self" href="06-choose-phonecase.html" class="pic_1">
+                            <img src="img/01-phonecase/abstract-1.png" alt="">
+                            <p>Madi</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery_picture">
+                    <div class="thumb" data-aos="zoom-out">
+                        <a target="_self" href="06-choose-phonecase.html" class="pic_2">
+                            <img src="img/01-phonecase/abstract-2.png" alt="">
+                            <p>Ana Leovy</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="gallery_picture">
+                    <div class="thumb" data-aos="zoom-in-left">
+                        <a target="_self" href="06-choose-phonecase.html" class="pic_3">
+                            <img src="img/01-phonecase/abstract-3.png" alt="">
+                            <p>Zlism</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="viewMore"><a data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" href="06-choose-phonecase.html">View More</a></div>
+        </div>
+    </section>
+    
+    <!-- ====================   Footer   ==================== --> 
+    <footer>
+        <nav class="qqq">
+            <div class="products">
+                <div class="ftitle">
+                    <h5 class="fmenu_name">Products</h5>
+                    <img class="arrow" src="img/footer/downarrow.png" alt="">
+                </div>
+                <span class="underline"></span>
+                <ul class="fsub">
+                    <li><a href="01-phonecase.html">手機殼</a></li>
+                    <li><a href="02-accessory.html">周邊配件</a></li>
+                    <li><a href="06-choose-phonecase.html">精選產品</a></li>
+                </ul>
+            </div>
+            <div class="company">
+                <div class="ftitle">
+                    <h5 class="fmenu_name">Company</h5>
+                    <img class="arrow" src="img/footer/downarrow.png" alt="">
+                </div>
+                <span class="underline"></span>
+                <ul class="fsub">
+                    <li><a href="04-aboutus.html">關於我們</a></li>
+                    <li><a href="03-shop.html">實體店面</a></li>
+                    <li><a href="#">人才招募</a></li>
+                </ul>
+            </div>
+            <div class="support">
+                <div class="ftitle">
+                    <h5 class="fmenu_name">Support</h5>
+                    <img class="arrow" src="img/footer/downarrow.png" alt="">
+                </div>
+                <span class="underline"></span>
+                <ul class="fsub">
+                    <li><a href="#">隱私權政策</a></li>
+                    <li><a href="#">使用條款</a></li>
+                    <li><a href="#">退換貨說明</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <div class="icon">
+                    <a href="#"><img src="img//footer/facebook.png" alt=""></a>
+                    <a href="#"><img src="img/footer/instagram.png" alt=""></a>
+                    <a href="#"><img src="img/footer/youtube.png" alt=""></a>
+                </div>
+                <div class="newsletter">
+                    <h5>Newsletter</h5>
+                        <input id="email" type="email"  class="the_text">
+                        <input id="subscribe" type="submit" value="Subscribe" class="the_btn">
+                </div>
+            </div>
+        </nav>
+        <p class="wrapper">本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。 若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。 COPYRIGHT © 2022 PARTYME Co.,Ltd. All rights reserved.</p>
+    </footer>
+
+    <!-- ====================   回到最上面   ==================== -->
+    <section>
+        <div class="backtop" id="backtop">
+          <img src="img/uparrow.png" alt="">
+        </div>
+    </section>
+ 
+    <!-- ====================   script   ==================== -->
+    <script src="js/all.js"></script>
+    <script src="js/01-phonecase.js"></script>
+    <script src="js/06-choose-phonecase.js"></script>
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script type='text/javascript' src="js/bootstrap.min.js"></script>
+    <script type='text/javascript' src="js/jquery.phonecase.js"></script>
+    <script type='text/javascript' src="js/jquery.accessory.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+ </body>
+ </html>

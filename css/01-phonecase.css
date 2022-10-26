@@ -1,0 +1,317 @@
+/* ====================   主內容   ==================== */
+
+.phonecase_page_topic h2 {
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: 2.75px;
+  color: #26273b;
+  text-align: center;
+  margin-top: 50px;
+  /* text-shadow: 1px 1px #f2f2f2; */
+}
+
+.phonecase_page_topic p {
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 2.75px;
+  color: #26273b;
+  text-align: center;
+  /* text-shadow: 1px 1px #f2f2f2; */
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* ===============   小於 1200   =============== */
+
+@media screen and (max-width: 1200px) {
+
+  .phonecase_page_topic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
+  
+}
+
+/* ==========   系列機殼展示   ========== */
+
+.show_series h3 {
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 2.75px;
+  color: #26273b;
+  /* text-shadow: 1px 1px #f2f2f2; */
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.show_series h4 {
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 2.75px;
+  color: #26273b;
+  /* text-shadow: 1px 1px #f2f2f2; */
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-bottom: 70px;
+}
+
+.gallery_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.gallery_picture {
+  box-sizing: border-box;
+  display: inline-block;
+  margin-bottom: 100px;
+  min-width: 300px;
+}
+/* Picture size and layout */
+
+.thumb {
+  width: 100%;
+  /* height: 500px; */
+  margin: 0 auto;
+  perspective: 1000px;
+}
+
+.thumb .pic_1 {
+  /* border: 1px solid white; */
+  text-align: center;
+}
+
+.thumb .pic_1 img {
+  height: 500px;
+}
+
+.thumb .pic_2 {
+  /* border: 1px solid white; */
+  text-align: center;
+}
+
+.thumb .pic_2 img {
+  height: 500px;
+}
+
+.thumb .pic_3 {
+  /* border: 1px solid white; */
+  text-align: center;
+}
+
+.thumb .pic_3 img {
+  height: 500px;
+}
+
+.thumb:hover a, .thumb:focus a, .thumb:active a {
+  transform: rotateX(0deg);
+  transform-origin: bottom;
+}
+
+.thumb a:after {
+  /* border: 1px solid white; */
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background: inherit;
+  background-size: cover, cover;
+  background-position: bottom;
+  transform: rotateX(90deg);
+  transform-origin: bottom;
+}
+/* Picture caption  style*/
+
+/* .thumb a span {
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  font: bold 1.5rem/1.5rem Ubuntu;
+  text-align: center;
+  transform: rotateX(-89.99deg);
+  transform-origin: top;
+} */
+/* Picture shadow */
+
+.thumb p {
+  margin-top: 45px;
+}
+
+/* ===============   小於 1200   =============== */
+
+@media screen and (max-width: 1200px) {
+
+  .show_series h3 {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 75px;
+  }
+
+  .show_series h4 {
+    margin-left: 0;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .gallery_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+}
+
+/* ===============   小於 767.98   =============== */
+
+@media (max-width: 767.98px) {
+
+  .gallery_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    margin-top: 60px;
+  }
+
+  .thumb a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* background-size: 0, cover;
+    transform-style: preserve-3d;
+    transition: all 0.5s;
+    transform: rotateX(80deg);
+    transform-origin: bottom;
+    border: none;
+    outline: none; */
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .thumb .pic_1 {
+    /* border: 1px solid white; */
+    text-align: center;
+  }
+  
+  .thumb .pic_1 img {
+    height: 300px;
+  }
+  
+  .thumb .pic_2 {
+    /* border: 1px solid white; */
+    text-align: center;
+  }
+  
+  .thumb .pic_2 img {
+    height: 300px;
+  }
+  
+  .thumb .pic_3 {
+    /* border: 1px solid white; */
+    text-align: center;
+  }
+  
+  .thumb .pic_3 img {
+    height: 300px;
+  }
+
+}
+
+/* ===============   大於 767.98   =============== */
+
+@media (min-width: 767.98px) {
+
+  .thumb a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: 0, cover;
+    transform-style: preserve-3d;
+    transition: all 0.5s;
+    transform: rotateX(80deg);
+    transform-origin: bottom;
+    border: none;
+    outline: none;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .thumb a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+    opacity: 0.15;
+    transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+    transform-origin: bottom;
+    opacity: 1;
+    box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+    transform: rotateX(0) translateZ(-60px) scale(0.85);
+  }
+  
+}
+
+
+
+/* =================   查看更多   ================== */
+
+.viewMore{
+  width: 90%;
+  text-align: right;
+  display: block;
+  /* padding-bottom: 5px; */
+  transition: 0.5s;
+  padding-top: 100px;
+  font-size: 20px;
+  color: #26273b;
+  margin-top: -100px;
+  margin-bottom: 100px;
+}
+
+.viewMore:hover{
+  color: #C4A87E;
+  cursor: pointer;
+}
+
+/* ===============   小於 1200   =============== */
+
+@media (max-width: 1200px){
+
+  .viewMore{
+      padding-top: 75px;
+      margin: 0 auto 100px auto;
+      text-align: center;
+  }
+  
+}
+
+/* ===============   小於 767.98   =============== */
+
+@media (max-width: 767.98px){
+
+  .viewMore{
+      /* padding-top: 30px; */
+      margin: -100px auto 100px auto;
+      text-align: center;
+  }
+  
+}

@@ -1,0 +1,306 @@
+/* ====================   主內容   ==================== */
+
+.main-block {
+    width: 100%;
+    margin-top: 200px;
+}
+
+.aboutus_topic h2 {
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 2.75px;
+    color: #26273b;
+    /* text-shadow: 1px 1px #f2f2f2; */
+    /* text-align: center; */
+    margin-left: 10%;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.content-block {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.imgcontainer {
+    padding-top: 50px;
+    margin: auto;
+}
+
+.content h3 {
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 2.75px;
+    color: #26273b;
+    /* text-shadow: 1px 1px #f2f2f2; */
+    margin-top: 100px;
+    /* margin-left: 100px; */
+}
+
+.content p {
+    text-align: justify;
+}
+
+.content .content{
+    width: 50%;
+    margin-top: 5%;
+}
+
+.content div.imgcontainer{
+    width: 45%;
+    overflow: hidden;
+}
+
+.content div.imgcontainer img{
+    width: 100%;
+    margin-top: 20%;
+}
+
+.content div.cms{
+    padding-left: 30px;
+}
+
+.content .content h3{
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.content .content h3::after{
+    content: "";
+    display: block;
+    /* background-color: #F0EBD8; */
+    width: 130px;
+    height: 40px;
+    position: absolute;
+    z-index: -1;
+}
+
+.titlebc::after{
+    top: 50%;
+    left: -10%;
+}
+
+.titlecms::after{
+    /* top: -23%;
+    left: 74%; */
+    top: -13px;
+    left: 330px;
+}
+
+.titlefd::after{
+    /* top: 70%;
+    left: 37%; */
+    top: 80px;
+    left: 200px;
+}
+
+.content .content p{
+    width: 90%;
+    font-weight: 500;
+}
+
+.content img{
+    margin-bottom: 90px;
+}
+
+.img_3 img {
+    height: 290px;
+}
+
+footer{
+    margin-top: 50px;
+}
+
+.rrr {
+    flex-direction: row-reverse;
+}
+
+/* ===============   768 ~ 1199.98   =============== */
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    .content {
+        align-items: center;
+        /* border: 2px solid blue; */
+    }
+
+    .content .content {
+        width: 55%;
+        padding: 50px 20px;
+    }
+
+    .content .content h3 {
+        margin-bottom: 50px;
+        font-size: 24px;
+    }
+
+    .content .content h3.titlecms {
+        font-size: 24px;
+    }
+
+    .content .content p {
+        width: 100%;
+    }
+
+    .content div.imgcontainer {
+        width: 45%;
+        overflow: hidden;
+        padding: 0 20px;
+    }
+
+    .content div.cms {
+        padding-left: 40px;
+    }
+
+    .content img {
+        width: 100%;
+        margin-bottom: 0;
+    }
+}
+
+/* ===============   小於 767.98   =============== */
+
+@media (max-width: 767.98px) {
+
+    .aboutus_topic h2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+    
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content .content {
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 50px;
+    }
+
+    .content .content p {
+        width: 100%;
+    }
+
+    .content div.imgcontainer {
+        width: 80%;
+        margin-bottom: 80px;
+    }
+
+    .content div.cbc {
+        order: 1;
+    }
+
+    .content div.icbc {
+        order: 2;
+    }
+
+    .content div.cms {
+        padding-left: 10px;
+        order: 3;
+    }
+
+    .content div.iccms {
+        order: 4;
+    }
+
+    .content div.cfd {
+        order: 5;
+    }
+
+    .content div.icfd {
+        order: 6;
+    }
+
+    .content img {
+        margin-bottom: 0px;
+    }
+
+    .content-block  {
+        padding-top: 20px;
+        display: block;
+        /* justify-content: center; */
+        margin: auto;
+    }
+
+}
+
+/* ===============   小於 575.98   =============== */
+
+@media (max-width: 575.98px) {
+    .content .content {
+        padding: 0;
+        margin-bottom: 10px
+    }
+
+    .content-3 {
+        margin-top: 50px;
+    }
+
+
+    .content .content h3 {
+        font-size: 24px;
+        margin-bottom: 30px;
+        line-height: 45px;
+        letter-spacing: 1px;
+        margin-top: 70px;
+        text-align: center;
+    }
+
+    .content .content h3::after {
+        width: 130px;
+        height: 40px;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .titlebc::after {
+        /* top: 70%; */
+        /* left: 45%; */
+        top: 19px;
+        left: 191px;
+    }
+
+    .titlecms::after {
+        top: -34%;
+        left: -20%;
+    }
+    
+    .titlefd::after {
+        top: 26px;
+        left: 118px;
+    }
+
+    .content img {
+        margin: 0;
+    }
+
+    .content div.imgcontainer {
+        width: 90%;
+
+    }
+
+    .cbc.fadein {
+        transform: none;
+        opacity: 1;
+    }
+
+    .bcimg.slidein.rtl {
+        opacity: 1;
+        transform: none;
+    }
+
+    .page_pic {
+        display: none;
+    }
+
+}

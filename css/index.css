@@ -1,0 +1,930 @@
+/* ====================   WORD   ==================== */
+
+h2 {
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 2.75px;
+    color: #26273b;
+}
+
+
+
+/* ====================   第一頻輪播   ==================== */
+
+.autocarousel {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.autocarousel .carousel, .autocarousel .item {
+    height: 750px;
+}
+
+.autocarousel .carousel {
+    width: 100%;
+}
+
+.carousel-caption h2 {
+    font-size: 36px;
+    font-weight: 900;
+    letter-spacing: 2.75px;
+    color: #C4A87E;
+}
+
+.carousel-inner {
+  height: 100%;
+  background: #000;
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    opacity:0.6;
+}
+
+.carousel-caption {
+    padding-bottom:80px;
+}
+
+.carousel-caption p{
+    padding:10px
+}
+
+/* ==========   Button   ========== */
+
+.btn-transparent {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.btn-transparent:hover {
+  background-color: #fff;
+}
+
+.btn-rounded {
+  border-radius: 70px;
+}
+
+.btn-large {
+  padding: 11px 45px;
+  font-size: 18px;
+}
+
+/* Change animation duration */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100px, 0, 0);
+    transform: translate3d(100px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100px, 0, 0);
+    transform: translate3d(100px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+
+
+/* ====================   精選系列   ==================== */
+
+.select {
+    display: flex;
+    margin-top: 250px;
+    margin-bottom: 150px;
+    text-align: center;
+    gap: 300px;
+}
+
+.selectcarousel {
+    width: 50%;
+    padding-left: 25px;
+    
+}
+
+.selectslider {
+    display: none;
+}
+
+.selectcards {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.selectcard {
+    position: absolute;
+    width: 256px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: transform .4s ease;
+    cursor: pointer;
+}
+
+.selectcard img {
+    width: 100%;
+    height: 100%;
+}
+
+.selectcard p {
+    margin-top: 20px;
+}
+
+#selectitem-1:checked ~ .selectcards .selecti3, #selectitem-2:checked ~ .selectcards .selecti1, #selectitem-3:checked ~ .selectcards .selecti2 {
+    transform: translatex(-70%) translateY(-32%) scale(.8);
+    z-index: 0;
+    transition: .8s;
+}
+
+#selectitem-1:checked ~ .selectcards .selecti3:hover, #selectitem-2:checked ~ .selectcards .selecti1:hover, #selectitem-3:checked ~ .selectcards .selecti2:hover {
+    transform: translatex(-70%) translateY(-32%) scale(.9);
+}
+
+#selectitem-1:checked ~ .selectcards .selecti2, #selectitem-2:checked ~ .selectcards .selecti3, #selectitem-3:checked ~ .selectcards .selecti1 {
+    transform: translatex(77%) translateY(-20%) scale(.8);
+    z-index: 0;
+    transition: .8s;
+}
+
+#selectitem-1:checked ~ .selectcards .selecti2:hover, #selectitem-2:checked ~ .selectcards .selecti3:hover, #selectitem-3:checked ~ .selectcards .selecti1:hover {
+    transform: translatex(77%) translateY(-20%) scale(.9);
+}
+
+#selectitem-1:checked ~ .selectcards .selecti1, #selectitem-2:checked ~ .selectcards .selecti2, #selectitem-3:checked ~ .selectcards .selecti3 {
+    transform: translatex(0) scale(1);
+    z-index: 1;
+    transition: .8s;
+}
+
+#selectitem-1:checked ~ .selectcards .selecti1:hover, #selectitem-2:checked ~ .selectcards .selecti2:hover, #selectitem-3:checked ~ .selectcards .selecti3:hover {
+    transform: translatex(0) scale(1.1);
+    z-index: 1;
+    transition: .8s;
+}
+
+.select-text {
+    width: 50%;
+}
+
+/* ===============   小於 575.98   =============== */
+
+@media screen and (max-width: 575.98px) {
+
+    .select{
+        margin-top: 50px;
+        margin-bottom: 0px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .selectcarousel {
+        display: block;
+        width: 100%;
+        height: 300px;
+        order: 2;
+        padding: 0 10px;
+        margin-top: -100px;
+        margin-bottom: 80px;
+    }
+
+    .selectcards {
+        margin-top: -60px;
+    }
+
+    .selectcard {
+        width: 201px;
+    }
+    
+    .select-text {
+        order: 1;
+        width: 100%;
+        text-align: center;
+        margin-top: -30px;
+    }
+
+    .selectcard img {
+        width: 90%;
+        height: 100%;
+    }
+
+    .select-text h2 {
+        margin-top: 100px;
+    }
+
+    .wrapper{
+        overflow: hidden;
+    }
+
+    #selectitem-1:checked ~ .selectcards .selecti3, #selectitem-2:checked ~ .selectcards .selecti1, #selectitem-3:checked ~ .selectcards .selecti2 {
+        transform: translatex(-45%) scale(.8);
+        opacity: .8;
+    }
+    
+    #selectitem-1:checked ~ .selectcards .selecti2, #selectitem-2:checked ~ .selectcards .selecti3, #selectitem-3:checked ~ .selectcards .selecti1 {
+        transform: translatex(45%) scale(.8);
+        opacity: .8;
+    }
+    
+    #selectitem-1:checked ~ .selectcards .selecti1, #selectitem-2:checked ~ .selectcards .selecti2, #selectitem-3:checked ~ .selectcards .selecti3 {
+        transform: translatex(0) scale(1);
+        opacity: 1;
+    }
+    #selectitem-1:checked ~ .selectcards .selecti3:hover, #selectitem-2:checked ~ .selectcards .selecti1:hover, #selectitem-3:checked ~ .selectcards .selecti2:hover {
+        transform: translatex(-45%) scale(.9);
+    }
+    
+    #selectitem-1:checked ~ .selectcards .selecti2:hover, #selectitem-2:checked ~ .selectcards .selecti3:hover, #selectitem-3:checked ~ .selectcards .selecti1:hover {
+        transform: translatex(45%) scale(.9);
+    }
+
+    .select-text.fadein {
+        opacity: 1;
+    }
+
+}
+
+/* ===============   576 ~ 767.98   =============== */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .select {
+        margin-top: 100px;
+        margin-bottom: 0px;
+        flex-direction: column;
+        align-items: center;
+        gap: 200px;
+    }
+
+    .selectcard {
+        width: 201px;
+    }
+
+    .selectcarousel {
+        display: block;
+        width: 100%;
+        height: 300px;
+        order: 2;
+        padding: 0 10px;
+        margin-top: -100px;
+        margin-bottom: 100px;
+    }
+
+    .selectcard img {
+        width: 79%;
+        height: 100%;
+    }
+
+    #selectitem-1:checked ~ .selectcards .selecti3, #selectitem-2:checked ~ .selectcards .selecti1, #selectitem-3:checked ~ .selectcards .selecti2 {
+        transform: translatex(-80%) scale(.8);
+        opacity: .8;
+    }
+      
+    #selectitem-1:checked ~ .selectcards .selecti2, #selectitem-2:checked ~ .selectcards .selecti3, #selectitem-3:checked ~ .selectcards .selecti1 {
+        transform: translatex(80%) scale(.8);
+        opacity: .8;
+    }
+
+    #selectitem-1:checked ~ .selectcards .selecti3:hover, #selectitem-2:checked ~ .selectcards .selecti1:hover, #selectitem-3:checked ~ .selectcards .selecti2:hover {
+        transform: translatex(-80%) scale(.9);
+    }
+
+    #selectitem-1:checked ~ .selectcards .selecti2:hover, #selectitem-2:checked ~ .selectcards .selecti3:hover, #selectitem-3:checked ~ .selectcards .selecti1:hover{
+        transform: translatex(80%) scale(.9);
+    }
+    
+    .select-text {
+        order: 1;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .select-text h3 {
+        padding: 0;
+        transform: scale(0.8);
+    }
+
+}
+
+/* ===============   768 ~ 978   =============== */
+
+@media (min-width: 768px) and (max-width: 979.98px) {
+
+    .select {
+        gap: 0;
+    }
+
+    .select-img {
+        display: none;
+    }
+
+    .selectcarousel {
+        display: block;
+        width: 50%;
+        padding-top: 0;
+        padding-left: 0;
+        height: 300px;
+    }
+
+    div.selectcards {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    label.selectcard {
+        width: 182px;
+    }
+
+    .select-text h2 {
+        vertical-align: middle;
+    }
+
+    .selectcard img {
+        width: 79%;
+        height: 100%;
+    }
+    
+    .wrapper{
+        overflow: hidden;
+    }
+
+    #selectitem-1:checked ~ .selectcards .selecti3, #selectitem-2:checked ~ .selectcards .selecti1, #selectitem-3:checked ~ .selectcards .selecti2 {
+        transform: translatex(-45%) scale(.8);
+        opacity: .8;
+    }
+      
+    #selectitem-1:checked ~ .selectcards .selecti2, #selectitem-2:checked ~ .selectcards .selecti3, #selectitem-3:checked ~ .selectcards .selecti1 {
+        transform: translatex(45%) scale(.8);
+        opacity: .8;
+    }
+
+    #selectitem-1:checked ~ .selectcards .selecti3:hover, #selectitem-2:checked ~ .selectcards .selecti1:hover, #selectitem-3:checked ~ .selectcards .selecti2:hover {
+        transform: translatex(-45%) scale(.9);
+    }
+
+    #selectitem-1:checked ~ .selectcards .selecti2:hover, #selectitem-2:checked ~ .selectcards .selecti3:hover, #selectitem-3:checked ~ .selectcards .selecti1:hover{
+        transform: translatex(45%) scale(.9);
+    }
+
+    .select-text {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+    }
+    
+    .select-text h3 {
+        font-size: 40px;
+        line-height: 52px;
+        padding: 30px 0px;
+    }
+
+}
+
+/* ===============   980 ~ 1199.98   =============== */
+
+@media (min-width: 980px) and (max-width: 1199.98px){
+
+    .select {
+        margin-bottom: 50px;
+        margin-top: 120px;
+        gap: 0;
+    }
+
+    .select.wrapper {
+        padding: 0 10px;
+    }
+
+    .selectcarousel {
+        width: 53%;
+        padding-top: 110px;
+        padding-left: 0;
+        height: 500px;
+    }
+
+    label.selectcard {
+        width: 41%;
+    }
+    
+    .select-text h2 {
+        margin-top: 200px;
+    }
+
+    .selectcard img {
+        width: 85%;
+        height: 100%;
+    }
+
+    #selectitem-1:checked ~ .selectcards .selecti3, #selectitem-2:checked ~ .selectcards .selecti1, #selectitem-3:checked ~ .selectcards .selecti2 {
+        transform: translatex(-70%) translateY(-35%) scale(.8);
+    }
+    
+    #selectitem-1:checked ~ .selectcards .selecti3:hover, #selectitem-2:checked ~ .selectcards .selecti1:hover, #selectitem-3:checked ~ .selectcards .selecti2:hover {
+        transform: translatex(-70%) translateY(-35%) scale(.9);
+    }
+
+    #selectitem-1:checked ~ .selectcards .selecti2, #selectitem-2:checked ~ .selectcards .selecti3, #selectitem-3:checked ~ .selectcards .selecti1 {
+        transform: translatex(70%) translateY(-20%) scale(.8);
+    }
+    
+    #selectitem-1:checked ~ .selectcards .selecti2:hover, #selectitem-2:checked ~ .selectcards .selecti3:hover, #selectitem-3:checked ~ .selectcards .selecti1:hover {
+        transform: translatex(70%) translateY(-20%) scale(.9);
+    }
+
+    .select-text h3{
+        padding: 300px 0 130px 0;
+    }
+
+}
+
+
+
+/* ==========   精選配件 button 變形   ========== */
+
+.button {
+    display: flex;
+    margin-top: 400px;
+}
+
+.button a {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    transition-duration:1s; 
+}
+
+.button p {
+    display: flex;
+    justify-content: center;
+    transition-duration:1s; 
+    line-height: 70px
+}
+
+.button:hover a {  
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.button:hover a > p {  
+    display: flex;
+    justify-content: center;
+    width:100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.button-link {
+    color: #fff;
+    border: 1px solid #26273b;
+    border-radius: 15px;
+    background-color: #26273b;
+    width: 25%;
+    margin: auto;
+    line-height: 48px;
+}
+
+/* ===============   小於 575.98   =============== */
+
+@media (max-width: 575.98px) {
+
+    .button {
+        display: flex;
+        margin-top: 20px;
+    }
+
+}
+
+/* ===============   576 ~ 767.98   =============== */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .button {
+        display: flex;
+        margin-top: 20px;
+    }
+
+}
+
+/* ===============   768 ~ 1199.98   =============== */
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+
+    .button {
+        display: flex;
+        margin-top: -40px;
+    }
+
+}
+
+
+
+/* ====================   精選配件   ==================== */
+
+.accessories {
+    top: 140px;
+    margin-bottom: 150px;
+    position: relative;
+}
+
+.accessories h2 {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.accessories .items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 75px;
+}
+
+.accessories .i-card {
+    margin-bottom: 80px;
+    width: 300px;
+    transition: .3s;
+}
+
+.accessories .i-card:hover {
+    transform: rotate(5deg);
+    opacity: .8;
+}
+
+.accessories .i-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.accessories .i-card p {
+    text-align: center;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+/* ===============   小於 575.98   =============== */
+
+@media (max-width: 575.98px) {
+    
+    .accessories {
+        margin-bottom: 80px;
+    }
+    
+    .accessories h2 {
+        margin-bottom: 100px;
+    }
+
+    .items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .accessories .i-card {
+        margin-bottom: 10px;
+        width: 85%;
+    }
+
+}
+
+/* ===============   576 ~ 767.98   =============== */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .accessories h2 {
+        margin-bottom: 100px;
+    }
+
+    .items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .accessories .i-card {
+        margin-bottom: 30px;
+    }
+
+}
+
+/* ===============   768 ~ 1199.98   =============== */
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+
+    .accessories h2 {
+        margin-bottom: 100px;
+    }
+
+    .items {
+        margin-bottom: 50px;
+        padding: 30px;
+    }
+
+    .accessories .i-card {
+        margin-bottom: 30px;
+        max-width: calc((100% - 40px) / 3);
+    }
+
+}
+
+
+
+/* ==========   查看更多   ========== */
+
+.viewMore {
+    width: 98%;
+    text-align: right;
+    display: block;
+    /* padding-bottom: 5px; */
+    transition: 0.5s;
+    padding-top: 0px;
+    font-size: 20px;
+    color: #26273b;
+}
+
+.viewMore:hover {
+    color: #C4A87E;
+    cursor: pointer;
+    
+}
+
+/* ===============   小於 767.98   =============== */
+
+@media (max-width: 767.98px) {
+
+    .viewMore{
+        padding-top: 50px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+}
+
+
+
+/* ====================   最新消息  ==================== */
+
+.news {
+    padding-top: 100px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 250px;
+}
+
+.news_title {
+    text-align: center;
+}
+
+.news_block {
+    margin: 100px 0px;
+}
+
+/* ===============   大於 769   =============== */
+
+@media (min-width:769px) {
+
+    .news_block {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: auto;
+    }
+
+    .news > .news-change:nth-child(3n) .news_block {
+        flex-direction: row-reverse;
+    }
+
+    .news_img_left img {
+        width: 400px;
+        border-radius: 10px;
+        display: block;
+        position: relative;
+        left: 10%;
+    }
+
+    .news_text_left {
+        background-color: #26273b;
+        padding: 70px 100px;
+        letter-spacing: 2px;
+        border-radius: 20px;
+        z-index: -1;
+        position: relative;
+        top: 70px;
+        right: 2.5%;
+        margin-top: 100px;
+    }
+
+    .news_img_right img {
+        width: 400px;
+        border-radius: 10px;
+        display: block;
+        position: relative;
+        right: 10%;
+    }
+
+    .news_text_right {
+        background-color: #26273b;
+        padding: 70px 100px;
+        letter-spacing: 2px;
+        border-radius: 20px;
+        z-index: -1;
+        position: relative;
+        top: 70px;
+        left: 2.5%;
+        margin-top: 100px;
+    }
+
+    .news_text_right {
+        background-color: #26273b;
+        padding: 70px 100px;
+        letter-spacing: 2px;
+        border-radius: 20px;
+        z-index: -1;
+        position: relative;
+        top: 70px;
+        left: 2.5%;
+    }
+
+}
+
+/* ===============   小於 769   =============== */
+
+@media (max-width:769px) {
+    
+    .news-img {
+         width: 100%;
+    }
+
+    .news img {
+        max-width: 100%;
+        display: block;
+        border-radius: 10px;
+    }
+
+    .news-text {
+        padding: 30px;
+        letter-spacing: 2px;
+        z-index: -1;
+    }
+
+    .news_text_left {
+        background-color: #26273b;
+        padding: 20px 40px;
+        letter-spacing: 2px;
+        border-radius: 20px;
+        z-index: -1;
+        position: relative;
+        top: 10px;
+
+    }
+
+    .news_text_right {
+        background-color: #26273b;
+        padding: 20px 40px;
+        letter-spacing: 2px;
+        border-radius: 20px;
+        z-index: -1;
+        position: relative;
+        top: 10px;
+    }
+
+}
+
+
+
+/* ====================   Loading 頁面   ==================== */
+
+.loadingpage {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;  
+    z-index: 100;
+
+}
+
+.bar {
+    background-image: url(../img/123.jpg);
+    width: 100%;
+    height: calc(100vh / 3);
+}
+
+.bar2 {
+    position: relative;
+}
+
+@keyframes bar {
+    0%{
+        width: 100%;
+        opacity: 1;
+    }
+    100%{
+        width: 0%;
+        opacity: .5;
+    }
+}
+
+.loadcontent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+}
+
+.loadlogo {
+    width: 500px;
+    animation: loading 10s ease infinite;
+    margin-right: 20px;
+}
+
+.typing {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: type 10s steps(80) infinite;
+    color: #C4A87E;
+}
+
+@keyframes type {
+    0% {
+        opacity: 0;
+        width: 0%;
+    }
+    50%{
+        opacity: 1;
+    }
+    75% {
+        width: 100%;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.loadcontent h4 {
+    font-size: 128px;
+    font-weight: 500;
+}
+
+@media (max-width: 576px) {
+
+    .loadlogo {
+        width: 200px;
+    }
+
+    .loadcontent {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .loadlogo {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .loadcontent h4 {
+        font-size: 32px;
+    }
+
+}

@@ -1,0 +1,86 @@
+/* ==================== 外觀 ==================== */
+
+.buy_page_topic h2 {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 2.75px;
+  color: #26273b;
+  /* text-shadow: 1px 1px #f2f2f2; */
+  /* margin-left: 5%; */
+}
+
+@media (max-width: 991px) {
+
+  .buy_page_topic h2 {
+      font-size: 48px;
+      font-weight: 700;
+      letter-spacing: 2.75px;
+      color: #26273b;
+      /* text-shadow: 1px 1px #26273b; */
+      text-align: center;
+      margin-bottom: 120px;
+      margin: auto;
+  }
+  
+}
+
+.main-block {
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+.text-center {
+  margin-top: 100px;
+}
+
+.add-btn {
+  margin-top: 30px;
+}
+
+.text-center img{vertical-align:middle;margin-bottom: 30px;}
+
+
+
+
+
+#badge-notify {
+  position: relative;
+  top: 0px;
+  right: 0px;
+}
+
+
+
+
+
+.zzz .text-center {
+  color: #C4A87E;
+}
+
+.zzz .text-center:hover {
+  color: #26273b;
+  transition: 0.5s;
+}
+
+
+
+
+.six_page_pic {
+  margin-top: 50px;
+}
+
+.six_page_pic img {
+  width: 100%;
+}
+
+
+
+
+
+
+.badge-notify{
+  position:relative;
+}
+.my-cart-icon-affix {
+  z-index: 999;
+}

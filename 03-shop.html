@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>實體通路</title>
+    <link rel="stylesheet" href="css/normal/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">   <!-- icon -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">   <!-- 購物車 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">   <!-- 滑入動畫 -->
+    <link rel="stylesheet" href="css/total/all.css">
+    <link rel="stylesheet" href="css/total/header.css">
+    <link rel="stylesheet" href="css/total/footer.css">
+    <link rel="stylesheet" href="css/03-shop.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- ====================   導覽列   ==================== -->
+    <header id="header">
+        <!-- ====================   主列表   ==================== -->
+        <nav class="main_sel wrapper">
+            <h1><a class="main_sel_logo" href="index.html"><img src="img/navigation/big-logo.png" alt=""></a></h1>
+            <ul>
+                <li><a href="01-phonecase.html">系列機殼</a>
+                    <!-- ====================   次列表   ==================== -->
+                    <ol>
+                        <li><a href="06-choose-phonecase.html">卡通塗鴉</a></li>
+                        <li><a href="06-choose-phonecase.html">藝術文字</a></li>
+                        <li><a href="06-choose-phonecase.html">流行藝術</a></li>
+                        <li><a href="06-choose-phonecase.html">抽象主義</a></li>
+                        <li><a href="06-choose-phonecase.html">數位藝術</a></li>
+                    </ol>
+                </li>
+                <li><a href="02-accessory.html">周邊配件</a>
+                    <!-- ====================   次列表   ==================== -->
+                    <ol>
+                        <li><a href="07-choose-accessory-1.html">AirPods保護套</a></li>
+                        <li><a href="07-choose-accessory-1.html">AppleWatch保護殼</a></li>
+                        <li><a href="07-choose-accessory-1.html">磁吸式無線充電盤</a></li>
+                        <li><a href="07-choose-accessory-1.html">螢幕保護貼</a></li>
+                        <li><a href="07-choose-accessory-1.html">鏡頭保護貼</a></li>
+                        <li><a href="07-choose-accessory-1.html">充電線</a></li>
+                    </ol>
+                </li>
+                <li><a href="03-shop.html">實體通路</a></li>
+                <li><a href="04-aboutus.html">關於我們</a></li>
+                <li class="fa">
+                    <a href="05-login.html"><i class="fa-solid fa-user"></i></a>
+                </li>
+                <li class="fa glyphiconn my-cart-icon"><i class="fa-solid fa-cart-shopping"></i>
+                    <span class="glyphicon                                       my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span></li>
+                                            <!--  glyphicon-shopping-cart -->
+                </li>
+            </ul>
+        </nav>
+        <!-- ====================   漢堡   ==================== -->
+        <nav class="ham_sel">
+            <div class="ham_nav">
+                <h1><a class="ham_sel_logo" href="index.html"><img src="img/navigation/big-logo.png" alt=""></a></h1>
+                <div class="ham_line">
+                    <span class="ham_btn hb_1"></span>
+                    <span class="ham_btn hb_2"></span>
+                    <span class="ham_btn hb_3"></span>
+                </div>
+            </div>
+            <ul class="ham_menu">
+                <li><a href="01-phonecase.html">系列機殼</a></li>
+                <li class="plus_line">
+                    <a>周邊配件</a>
+                    <span class="horizontal"></span>
+                    <span class="vertical"></span>     
+                </li>
+                <!-- ====================   漢堡次列表   ==================== -->
+                <ol class="ham_subsel">
+                    <li><a href="07-choose-accessory-1.html">AirPods保護套</a></li>
+                    <li><a href="07-choose-accessory-1.html">AppleWatch保護殼</a></li>
+                    <li><a href="07-choose-accessory-1.html">磁吸式無線充電盤</a></li>
+                    <li><a href="07-choose-accessory-1.html">螢幕保護貼</a></li>
+                    <li><a href="07-choose-accessory-1.html">鏡頭保護貼</a></li>
+                    <li><a href="07-choose-accessory-1.html">充電線</a></li>
+                </ol>
+                <li><a href="03-shop.html">實體通路</a></li>
+                <li><a href="04-aboutus.html">關於我們</a></li>
+                <li><a href="05-login.html">會員登錄</a></li>
+                <li class="my-cart-icon">購物車<span class="glyphicon                                       my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span></li>
+                                                                        <!--  glyphicon-shopping-cart -->
+            </ul>
+        </nav>
+        <div id="ham_mask" class="noshow"></div>
+    </header>
+
+    <!-- ========================================   改到這邊   ======================================== -->
+
+    <!-- ====================   主內容   ==================== -->
+    <section class="shop-block">
+        <div class="shop_page_topic">
+            <h2>門市資訊</h2>
+        </div>
+        <div class="page_pic">
+            <img src="img/03-shop/shop.jpg" alt="">
+        </div>
+        <div>
+            <!-- ====================   品牌概念店  ==================== -->
+            <div class="concept_block">
+                <h3 class="concept_store">品牌概念店</h3>
+                <div class="concept_content">
+                    <div class="concept-text-left" data-aos="zoom-in-right">
+                        <p>
+                            PANGOLIN Park
+                            <br>
+                            PANGOLIN 全地球首間門市。             
+                            立即親臨 PANGOLIN Park， 選購最新聯名商品，並客製化專屬手機保護殼。
+                            <br>
+                            PANGOLIN Cube 預約正式開放！ 立即登記預約
+                            <br>
+                            PANGOLIN Cube 享受 1080 度自拍體驗！
+                            <br>
+                            地點：美國
+                            <br>
+                            營業時間：早上 0 時 0 分至晚上 0 時整(GMT +0 格林威治)
+                            <br>
+                            聯絡我們：123456798@123.com
+                        </p>
+                    </div>
+                    <div class="concept-img" data-aos="zoom-in-left">
+                        <img src="img/03-shop/shop-1.jpg" alt="" class="align-right">
+                    </div>
+                </div>
+                <div class="concept-map" data-aos="zoom-in-up">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12690.124994018517!2d-122.02654145932075!3d37.32992978975564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb596e9e188fd%3A0x3b0d8391510688f0!2sApple%20Park!5e0!3m2!1szh-TW!2stw!4v1666546733109!5m2!1szh-TW!2stw" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <!-- ====================   品牌直營店   ==================== -->
+            <div class="direct_block">
+                <h3 class="direct_store">品牌直營店</h3>
+                <div class="direct_content rrr">
+                    <div class="direct-text-right" data-aos="zoom-in-left">
+                        <p>
+                            PANGOLIN STUDIO
+                            <br>
+                            地點：墨西哥
+                            <br>
+                            營業時間：早上 0 時 0 分至晚上 0 時整(GMT +0 格林威治)
+                            <br>
+                            聯絡我們：123456798@123.com
+                        </p>
+                        </p>
+                    </div>
+
+                    <div class="direct-img" data-aos="zoom-in-right">
+                        <img src="img/03-shop/shop-2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="concept-map" data-aos="zoom-in-up">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1881.189540221822!2d-99.20327574179755!3d19.439216226031277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2021ad7d389b3%3A0xb83d3f5dc6bb9046!2sAntara!5e0!3m2!1szh-TW!2stw!4v1666546665565!5m2!1szh-TW!2stw" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="direct_content qqq">
+                    <div class="direct-text-left direct-text-left-2" data-aos="zoom-in-right">
+                        <p>
+                            PANGOLIN STUDIO
+                            <br>
+                            地點：台灣
+                            <br>
+                            營業時間：早上 0 時 0 分至晚上 0 時整(GMT +0 格林威治)
+                            <br>
+                            聯絡我們：123456798@123.com
+                        </p>
+                        </p>
+                    </div>
+                    <div class="direct-img" data-aos="zoom-in-left">
+                        <img src="img/03-shop/shop-3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="concept-map" data-aos="zoom-in-up">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.9984389268984!2d121.56183251542612!3d25.034127044439444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abb6e90233d5%3A0xf872050c112645cb!2zQXBwbGUg5Y-w5YyXMTAx!5e0!3m2!1szh-TW!2stw!4v1666546432877!5m2!1szh-TW!2stw" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====================   Footer   ==================== --> 
+    <footer>
+        <nav class="qqq">
+            <div class="products">
+                <div class="ftitle">
+                    <h5 class="fmenu_name">Products</h5>
+                    <img class="arrow" src="img/footer/downarrow.png" alt="">
+                </div>
+                <span class="underline"></span>
+                <ul class="fsub">
+                    <li><a href="01-phonecase.html">手機殼</a></li>
+                    <li><a href="02-accessory.html">周邊配件</a></li>
+                    <li><a href="06-choose-phonecase.html">精選產品</a></li>
+                </ul>
+            </div>
+            <div class="company">
+                <div class="ftitle">
+                    <h5 class="fmenu_name">Company</h5>
+                    <img class="arrow" src="img/footer/downarrow.png" alt="">
+                </div>
+                <span class="underline"></span>
+                <ul class="fsub">
+                    <li><a href="04-aboutus.html">關於我們</a></li>
+                    <li><a href="03-shop.html">實體店面</a></li>
+                    <li><a href="#">人才招募</a></li>
+                </ul>
+            </div>
+            <div class="support">
+                <div class="ftitle">
+                    <h5 class="fmenu_name">Support</h5>
+                    <img class="arrow" src="img/footer/downarrow.png" alt="">
+                </div>
+                <span class="underline"></span>
+                <ul class="fsub">
+                    <li><a href="#">隱私權政策</a></li>
+                    <li><a href="#">使用條款</a></li>
+                    <li><a href="#">退換貨說明</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <div class="icon">
+                    <a href="#"><img src="img//footer/facebook.png" alt=""></a>
+                    <a href="#"><img src="img/footer/instagram.png" alt=""></a>
+                    <a href="#"><img src="img/footer/youtube.png" alt=""></a>
+                </div>
+                <div class="newsletter">
+                    <h5>Newsletter</h5>
+                        <input id="email" type="email"  class="the_text">
+                        <input id="subscribe" type="submit" value="Subscribe" class="the_btn">
+                </div>
+            </div>
+        </nav>
+        <p class="wrapper">本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。 若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。 COPYRIGHT © 2022 PARTYME Co.,Ltd. All rights reserved.</p>
+    </footer>
+
+    <!-- ====================   回到最上面   ==================== -->
+    <section>
+        <div class="backtop" id="backtop">
+          <img src="img/uparrow.png" alt="">
+        </div>
+    </section>
+
+    <!-- ====================   script   ==================== -->
+     <script src="js/all.js"></script>
+     <script src="js/03-shop.js"></script>
+     <script src="js/06-choose-phonecase.js"></script>
+     <script src="js/jquery-2.2.3.min.js"></script>
+     <script type='text/javascript' src="js/bootstrap.min.js"></script>
+     <script type='text/javascript' src="js/jquery.phonecase.js"></script>
+     <script type='text/javascript' src="js/jquery.accessory.js"></script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+         AOS.init();
+    </script>
+    
+ </body>
+ </html>
